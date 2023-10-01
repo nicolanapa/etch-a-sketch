@@ -1,6 +1,12 @@
 let div = document.createElement('div');
 
-for ( let i = 0; i < 32; i++ ) {
+let popup = document.querySelector("#popup");
+popup.addEventListener("click", () => {
+    prompt("Please enter how much grid size you want", "");
+
+})
+
+for ( let i = 0; i < (16*16); i++ ) {
     div = document.createElement("div");
     container.appendChild(div);
     div.classList.add("colored-div", "hover");

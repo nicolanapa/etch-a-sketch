@@ -11,3 +11,10 @@
     border: 2px solid rgb(167, 167, 167);
     justify-content: center;
 }
+
+#popup {
+    margin: 15px;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+}
