@@ -2,16 +2,22 @@ body {
     display: flex;
 }
 
-#container {
+#container.div {
+    display: flex;
+    flex-direction: row;
+}
+
+.colored-div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 2px 0px 0px;
-    padding: 200px;
-    width: auto;
-    height: 100px;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(167, 167, 167);
+    justify-content: center;
 }
 
-#container.div:hover {
-    background-color: white;
+.colored-div:hover {
+    background-color: black;
 }
