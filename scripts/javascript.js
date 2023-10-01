@@ -8,15 +8,15 @@ popup.addEventListener("click", () => {
     touched = true;
     let pronto = prompt("Please enter how much grid size you want", "16");
     
-    if ( pronto > 100 ) {
-        return alert("Can't output more than 100x100 grids!");
+    if ( pronto > 500 ) {
+        return alert("Can't output more than 500*500 grids!");
     }
     if ( pronto < 0 ) {
         return alert("Can't output negative numbers!");
     }
     let ii = pronto;
     ii = ii * ii;
-    for ( let i = 0; i < (ii - 1); i++ ) {
+    for ( let i = 0; i < ii; i++ ) {
     div = document.createElement("div");
     container.appendChild(div);
     div.classList.add("colored-div", "hover"); 
